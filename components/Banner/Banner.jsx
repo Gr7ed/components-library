@@ -1,25 +1,26 @@
 import classnames from "classnames"
 import {
-    BsCheckCircle,
-    BsExclamationTriangle,
-    BsInfoCircle,
-    BsXCircle,
+    BsCheckCircleFill,
+    BsExclamationTriangleFill,
+    BsInfoCircleFill,
+    BsXCircleFill,
 } from "react-icons/bs"
 
 const bannerIcons = {
-    success: BsCheckCircle,
-    warning: BsExclamationTriangle,
-    neutral: BsInfoCircle,
-    danger: BsXCircle,
+    success: BsCheckCircleFill,
+    warning: BsExclamationTriangleFill,
+    neutral: BsInfoCircleFill,
+    danger: BsXCircleFill,
 }
 
-export default function Banner({ children, className, type = "neutral", ...rest }) {
-    const bannerClass = classnames("banner", `banner-${type}`, className)
-    const Icon = bannerIcons[type] || bannerIcons.neutral
+export default function Banner({ children, className, variant = "neutral", ...rest }) {
+    const bannerClass = classnames("banner", `banner-${variant}`, className)
+    const iconClass = classnames("banner-icon", `banner-icon-${variant}`, className)
+    const Icon = bannerIcons[variant] || bannerIcons.neutral
 
     return (
         <div className={bannerClass} {...rest}>
-            <Icon className="banner-icon" aria-hidden="true" />
+            <Icon className={iconClass} aria-hidden="true" />
             <div className="banner-content">
                 {children}
             </div>

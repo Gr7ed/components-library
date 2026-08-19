@@ -23,22 +23,22 @@ export default function App() {
       <br />
       <Badge variant="indigo" shape="pill">Badge</Badge>
       <br />
-      <Banner type="success">
+      <Banner variant="success">
         <Banner.Title>Success</Banner.Title>
       </Banner>
       <br />
-      <Banner type="warning">
+      <Banner variant="warning">
         <Banner.Title>Warning</Banner.Title>
         <Banner.Text>Please review the details before continuing.</Banner.Text>
       </Banner>
       <br />
-      <Banner type="neutral">
-        <Banner.Title>Note</Banner.Title>
+      <Banner variant="neutral">
+        <Banner.Title>Update available</Banner.Title>
         <Banner.Text>This is a neutral informational message.</Banner.Text>
       </Banner>
       <br />
-      <Banner type="danger">
-        <Banner.Title>Danger</Banner.Title>
+      <Banner variant="danger">
+        <Banner.Title>There is a problem with your application</Banner.Title>
         <Banner.Text>Something went wrong and needs attention.</Banner.Text>
       </Banner>
       <br />

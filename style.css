@@ -212,23 +212,45 @@ button.button-danger {
 .banner-success {
     background-color: #ECFDF5;
     color: #065F46;
-    border-color: #047857;
 }
 
 .banner-warning {
     background-color: #fffbeb;
     color: #92400e;
-    border-color: #fde68a;
 }
 
 .banner-neutral {
-    background-color: #f3f4f6;
-    color: #1f2937;
-    border-color: #d1d5db;
+    background-color: #EFF6FF;
+    color: #1E40AF;
 }
 
 .banner-danger {
-    background-color: #fef2f2;
+    background-color: #FEF2F2;
     color: #991b1b;
-    border-color: #fecaca;
+}
+
+.banner-icon-success {
+    color: #34D399;
+}
+.banner-icon-warning {
+    color: #FBBF24;
+}
+.banner-icon-danger {
+    color: #F87171;
+}
+.banner-icon-neutral {
+    color: #60A5FA;
+}
+
+.banner-text-success {
+    color: #047857;
+}
+.banner-text-warning {
+    color: #B45309;
+}
+.banner-text-danger {
+    color: #B45309;
+}
+.banner-text-neutral {
+    color: #1C51B9;
 }

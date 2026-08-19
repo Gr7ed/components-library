@@ -1,8 +1,10 @@
 import classnames from "classnames"
 
-export default function BannerText({ children, className, ...rest }) {
+export default function BannerText({ children, className, variant, ...rest }) {
+    const bannerTextClass = classnames("banner-text", `banner-text-${variant}`, className)
+
     return (
-        <div className={classnames("banner-text", className)} {...rest}>
+        <div className={bannerTextClass} {...rest}>
             {children}
         </div>
     )
