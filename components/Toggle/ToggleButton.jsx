@@ -1,11 +1,15 @@
-import React from "react"
+import { useContext } from "react"
 import { ToggleContext } from "./Toggle"
 
-export default function ToggleButton({ children }) {
-    const { toggle } = React.useContext(ToggleContext)
-    
+export default function ToggleButton({ children, ...rest }) {
+    const { on, toggle } = useContext(ToggleContext)
+
     return (
-        <div onClick={toggle}>
+        <div
+            aria-pressed={on}
+            onClick={toggle}
+            {...rest}
+        >
             {children}
         </div>
     )

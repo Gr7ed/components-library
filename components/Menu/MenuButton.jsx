@@ -1,11 +1,17 @@
-import React from "react"
 import Button from "../Button/Button"
-import Toggle from "../Toggle/Toggle"
-export default function MenuButton({ children }) {
+import Toggle from "../Toggle/index"
+
+export default function MenuButton({ children, ...rest }) {
+    
     return (
         <Toggle.Button>
-            <Button>{children}</Button>
+            <Button
+                className="menu-button"
+                aria-haspopup="menu"
+                {...rest}
+            >
+                {children}
+            </Button>
         </Toggle.Button>
-
     )
 }

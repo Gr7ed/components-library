@@ -1,8 +1,6 @@
-import React from "react"
-
-export default function MenuItem({ children }) {
+export default function MenuItem({ children, className, ...rest }) {
     return (
-        <div className="menu-item">
+        <div className={className ? `menu-item ${className}` : "menu-item"} role="menuitem" {...rest}>
             {children}
         </div>
     )
